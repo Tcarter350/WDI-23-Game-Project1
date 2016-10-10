@@ -36,3 +36,7 @@ div {
 .logo-holder {
   float: right;
 }
+
+#dialog {
+  background-color: lightBlue;
+}
