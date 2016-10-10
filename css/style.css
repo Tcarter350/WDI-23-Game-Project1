@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://image.freepik.com/free-vector/detergents-supermarket-shelf_23-2147495479.jpg");
+  font-size: 25px;
+}
+
+#words {
+  height: 250px;
+  width: 150px;
+  background-image: url("http://www.clipartkid.com/images/211/writingaboutlit-community-uaf-edu-files-2011-05-notepad-graphic-jpg-ppsCO1-clipart.jpg");
+  overflow: scroll;
+}
+
+.container {
+  margin: auto 0;
+}
+
+img {
+  animated: lightSpeedIn;
+}
+
+div {
+  display: inline-block;
+}
