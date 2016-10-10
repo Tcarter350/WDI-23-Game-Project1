@@ -5,6 +5,19 @@
     <title>Supermarket Sweep</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <embed src="audio/theme.mp3" autostart="true" loop="false" hidden="true">
+
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
+
     <script type="text/javascript" src="js/list.js">
     </script>
     <script type="text/javascript" src="js/app.js">
@@ -12,13 +25,16 @@
 </head>
 
 <body>
+  <div id="dialog" title="Basic dialog">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
   <div class="container">
     <div class="shoppingstack">
         <pre id="words"></pre>
         <!-- trolley pic goes here -->
     </div>
   <div class="infostack">
-  <div> <img class="animated" src="http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814"</div>
+  <div class="logo-holder"> <img id= "logo" class="animated" src="http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814"</div>
         <div id="score"></div>
   </div>
 </div>

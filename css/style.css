@@ -1,17 +1,24 @@
 body {
   background-image: url("https://image.freepik.com/free-vector/detergents-supermarket-shelf_23-2147495479.jpg");
   font-size: 25px;
+
 }
 
 #words {
-  height: 250px;
-  width: 150px;
-  background-image: url("http://www.clipartkid.com/images/211/writingaboutlit-community-uaf-edu-files-2011-05-notepad-graphic-jpg-ppsCO1-clipart.jpg");
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  height: 350px;
+  width: 300px;
+  background-size: cover;
+  background-image: url("http://exchangedownloads.smarttech.com/public/content/d3/d374f5fb-538c-4004-8c22-d2153548bb06/previews/medium/0001.png");
   overflow: scroll;
 }
 
 .container {
   margin: auto 0;
+  width: 700px;
+  height: 420px;
+  background-color: #299bad;
 }
 
 img {
@@ -20,4 +27,12 @@ img {
 
 div {
   display: inline-block;
+}
+
+#logo {
+  width: 300px;
+}
+
+.logo-holder {
+  float: right;
 }
