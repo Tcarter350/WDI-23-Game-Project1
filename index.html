@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Supermarket Sweep</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <embed src="audio/theme.mp3" autostart="true" loop="false" hidden="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-    <script type="text/javascript" src="js/list.js">
-    </script>
-    <script type="text/javascript" src="js/app.js">
-    </script>
-</head>
-
-<body>
-  <div id="dialog" title="INSTRUCTIONS">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-</div>
-  <div class="container">
-    <div class="shoppingstack">
+  <body>
+    <div id="dialog" title="How To Play">
+      <img id= "logo" class="animated rollIn" src='http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814'>
+      <div class="instructions animated bounceInRight">
+        <p>"Are you ready to go shopping? Step inside our very own supermarket, the only supermarket in the world that gives YOU money! £2000 is waiting on our shelves to be won by YOU! Shopping has never been so much fun!"<br>"The Aim of The Game:"<br>"Fill your trolley as high as you can by typing each item displayed on your shopping list in the correct order (remember to press ‘Enter’ in between each item)."<br>"You have 45 seconds!"<br>"Your timer will start as soon as you close this window."<br>"GET SET, GO!"</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="shoppingstack">
         <pre id="words"></pre>
         <!-- trolley pic goes here -->
-    </div>
-  <div class="infostack">
-  <div class="logo-holder"> <img id= "logo" class="animated" src="http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814"</div>
+      </div>
+      <div class="infostack">
+        <div class="logo-holder">
+          <img id= "logo"  src="http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814">
+        </div>
         <div id="score"></div>
         <div id="timer"></div>
-  </div>
-</div>
-
+        <!-- Dale -->
+      </div>
+    </div>
   </body>
 </html>

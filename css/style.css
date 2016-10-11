@@ -1,3 +1,7 @@
+div {
+  inline-block;
+}
+
 body {
   background-image: url("https://image.freepik.com/free-vector/detergents-supermarket-shelf_23-2147495479.jpg");
   font-size: 25px;
@@ -15,7 +19,8 @@ body {
 }
 
 .container {
-  margin: auto 0;
+  display: block;
+  margin: auto;
   width: 700px;
   height: 420px;
   background-color: #299bad;
@@ -25,12 +30,11 @@ img {
   animated: lightSpeedIn;
 }
 
-div {
-  display: inline-block;
-}
 
 #logo {
   width: 300px;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
 }
 
 .logo-holder {
@@ -38,5 +42,29 @@ div {
 }
 
 #dialog {
+  margin: auto;
   background-color: lightBlue;
+  min-width: 450px;
+  max-width: 558px;
+  heigth: 350px;
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+#dialog p {
+  color: black;
+  min-width: 450px;
+  font-size: 14px;
+}
+
+.instructions {
+  -webkit-animation-duration: 1.5s;
+}
+
+/*.shoppingstack {
+  width: 400px
+}*/
+
+div.ui-resizable-handle.ui-resizable-s {
+  width: 558px;
 }
