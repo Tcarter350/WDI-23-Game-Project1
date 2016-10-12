@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Supermarket Sweep</title>
-    <embed src="audio/theme.mp3" autostart="true" loop="false" hidden="true">
+    <embed src="audio/theme.mp3" autostart="true" loop="true" hidden="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -17,23 +17,26 @@
 
   <body>
     <div id="dialog" title="How To Play">
-      <img id= "logo" class="animated rollIn" src='http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814'>
+      <div class="howToPlayLogo">
+        <img id= "mainLogo" class="animated rollIn" src='http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814'>
+      </div>
       <div class="instructions animated bounceInRight">
-        <p>"Are you ready to go shopping? Step inside our very own supermarket, the only supermarket in the world that gives YOU money! £2000 is waiting on our shelves to be won by YOU! Shopping has never been so much fun!"<br>"The Aim of The Game:"<br>"Fill your trolley as high as you can by typing each item displayed on your shopping list in the correct order (remember to press ‘Enter’ in between each item)."<br>"You have 45 seconds!"<br>"Your timer will start as soon as you close this window."<br>"GET SET, GO!"</p>
+        <p>Are you ready to go shopping? Step inside our very own supermarket, the only supermarket in the world that gives YOU money! £2000 is waiting on our shelves to be won by YOU! Shopping has never been so much fun!<br>The Aim of The Game:<br>Fill your trolley as high as you can by typing each item displayed on your shopping list in the correct order (remember to press ‘Enter’ in between each item).<br>You have 45 seconds!<br>Your timer will start as soon as you close this window.<br>GET SET, GO!</p>
       </div>
     </div>
     <div class="container">
       <div class="shoppingstack">
         <pre id="words"></pre>
-        <!-- trolley pic goes here -->
       </div>
       <div class="infostack">
         <div class="logo-holder">
           <img id= "logo"  src="http://vignette4.wikia.nocookie.net/logopedia/images/1/1b/SupermarketSweep19932.png/revision/latest?cb=20141022082814">
         </div>
-        <div id="score"></div>
-        <div id="timer"></div>
-        <!-- Dale -->
+          <div class= "scoreboard">
+            <div id="score"></div>
+            <div id="timer"></div>
+          </div>
+        <img id="dale" class="animated wobble" src="images/Dale.png">
       </div>
     </div>
   </body>

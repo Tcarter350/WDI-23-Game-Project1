@@ -1,37 +1,78 @@
-div {
-  inline-block;
-}
+
 
 body {
   background-image: url("https://image.freepik.com/free-vector/detergents-supermarket-shelf_23-2147495479.jpg");
   font-size: 25px;
+  font-family: 'Gloria Hallelujah', cursive;
 
 }
 
+#score , #timer {
+
+display: inline-block;
+position: fixed;
+top: 200px;
+width: 240px;
+}
+
+#score {
+  text-align: right;
+  padding-right: 80px;
+}
+
+#timer {
+padding-left: 80px;
+}
+
+.shoppingstack {
+  position: absolute;
+}
+
+.infostack {
+  width: 330px;
+  height: 420px;
+  float: right;
+  vertical-align: bottom;
+}
+
 #words {
+  border: 2px solid black;
+  position: relative;
+  left: 30px;
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
-  height: 350px;
-  width: 300px;
+  font-size: 23px;
+  height: 370px;
+  width: 330px;
   background-size: cover;
   background-image: url("http://exchangedownloads.smarttech.com/public/content/d3/d374f5fb-538c-4004-8c22-d2153548bb06/previews/medium/0001.png");
   overflow: scroll;
 }
 
 .container {
-  display: block;
+  border: 2px solid black;
   margin: auto;
   width: 700px;
   height: 420px;
   background-color: #299bad;
 }
 
-img {
-  animated: lightSpeedIn;
+#dale {
+float: right;
+position: relative;
+bottom: -195px;
+width: 300px;
+-webkit-animation-duration: 8s;
+-webkit-animation-iteration-count: infinite;
 }
 
-
 #logo {
+  display:block;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin:auto;
   width: 300px;
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1.5s;
@@ -52,6 +93,7 @@ img {
 }
 
 #dialog p {
+  text-align: center;
   color: black;
   min-width: 450px;
   font-size: 14px;
@@ -67,4 +109,26 @@ img {
 
 div.ui-resizable-handle.ui-resizable-s {
   width: 558px;
+}
+
+.howToPlayLogo {
+  align: center;
+}
+
+.logo-holder {
+  position: absolute;
+}
+
+#mainLogo {
+  display:block;
+  padding: 10px;
+  padding-left: 10px;
+  margin:auto;
+  width: 300px;
+
+}
+
+.scoreboard {
+  width: 240px;
+
 }

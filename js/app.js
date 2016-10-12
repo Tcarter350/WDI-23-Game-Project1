@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (count === 0) {
       clearInterval(counter);
       gameOver = true;
-      console.log("You're out of time! Game will restart when you press Ok.");
+      console.log("You're out of time!");
       myFunction();
       // location.reload();
     }
@@ -51,29 +51,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Play again?
   function myFunction() {
-
     // if score is low do this
-    if (score === 180 || score < 180) {
+    if (score === 165 || score < 165) {
 
-    if (confirm("Oh no! you only scored " + score + " points.\nRemember, points mean prizes\nWould you like to play again?") === true) {
-      playAgain = true;
-      resetGame();
+      if (confirm("Oh no! you only scored " + score + " points.\nRemember, points mean prizes\nWould you like to play again?") === true) {
+        playAgain = true;
+        resetGame();
+      } else {
+        playAgain = false;
+      }
+
     } else {
-      playAgain = false;
-    }
-    // console.log("Play again? ", playAgain);
-  }
-
-  else  {
-
-  if (confirm("Yowzer! Have you done this before?! You scored " + score + " points.\n\nYes theres prizes in store and much much more when you play…SUPERMARKET SWEEP!\n\nWould You like to play again?") === true) {
-    playAgain = true;
-    resetGame();
-  } else {
-    playAgain = false;
+      if (confirm("Yowzer! Have you done this before?! You scored " + score + " points.\n\nYes, there's prizes in store and much much more when you play…\n\nSUPERMARKET SWEEP!\n\nWould You like to play again?") === true) {
+        playAgain = true;
+        resetGame();
+      } else {
+        playAgain = false;
+      }
     }
   }
-}
 
 //// Reset the game
 // score Done!!!
@@ -81,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Change the words display Done!!!
 // Dialog box appears
   function resetGame() {
+    gameOver = false;
     score = 0;
     scoreElem.textContent = score;
     console.log("reset score", score);
@@ -93,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     wordsElem.textContent = textToType;
     count = 45;
     counter = setInterval(timer, 1000);
+
   }
 
 
@@ -117,6 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.addEventListener('keyup', function(e) {
+    // console.log("Key pressed");
       var expectedKey = textToType[0];
 
       if (gameOver) {
@@ -141,8 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       scoreElem.textContent = score;
 
-
     });
-
-
+// End
 });
